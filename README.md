@@ -1,5 +1,7 @@
 ぎ# Summer Heat Mitigation Guide | 夏季熱対策ガイド
 
+[![pages-build-deployment](https://github.com/KAFKA2306/summer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/KAFKA2306/summer/actions/workflows/pages/pages-build-deployment)
+
 科学的な形式で夏の暑さ対策情報を整理したウェブサイト
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://incredible-strudel-4d0778.netlify.app)
