@@ -306,7 +306,6 @@ function animateStatistic(element) {
     const numberMatch = targetText.match(/[\d.]+/);
     if (numberMatch) {
         const targetNumber = parseFloat(numberMatch[0]);
-        const isPercentage = targetText.includes('%');
         const isFloat = targetText.includes('.');
         
         let currentNumber = 0;
@@ -443,41 +442,3 @@ window.addEventListener('error', function(e) {
 window.addEventListener('load', () => {
     initPrintSupport();
 });
-
-// Export functionality for data
-function exportData() {
-    const data = {
-        timestamp: new Date().toISOString(),
-        results: {
-            uv_blocking: { effectiveness: 99.99, confidence: 99.7 },
-            thermoregulation: { effectiveness: 95.2, confidence: 98.9 },
-            cooling_systems: { effectiveness: 92.8, confidence: 97.4 }
-        },
-        statistical_significance: { p_value: 0.001, n: 240, effect_size: 0.327 }
-    };
-    
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'summer_heat_mitigation_data.json';
-    a.click();
-    URL.revokeObjectURL(url);
-}
-
-// Add export button if needed
-if (document.querySelector('#results')) {
-    const exportBtn = document.createElement('button');
-    exportBtn.textContent = '📊 Export Data';
-    exportBtn.onclick = exportData;
-    exportBtn.style.cssText = `
-        margin: 20px 0;
-        padding: 10px 20px;
-        background: var(--accent-color);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    `;
-    document.querySelector('#results .container').appendChild(exportBtn);
-}
