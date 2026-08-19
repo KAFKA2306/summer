@@ -1,173 +1,47 @@
-ぎ# Summer Heat Mitigation Guide | 夏季熱対策ガイド
+# Summer Heat Mitigation Guide | 夏季熱対策ガイド
 
-[![pages-build-deployment](https://github.com/KAFKA2306/summer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/KAFKA2306/summer/actions/workflows/pages/pages-build-deployment)
+暑さ対策について、独自の実験結果や製品ランキングを作らず、環境省・厚生労働省などの公的情報へ戻れる形で整理する静的Webページです。
 
-科学的な形式で夏の暑さ対策情報を整理したウェブサイト
+## 方針
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://incredible-strudel-4d0778.netlify.app)
+- 公的機関の現行情報を優先する。
+- 実施していない試験、存在を確認できない測定値、sample size、p値、信頼度を表示しない。
+- 生理学的説明、製品メーカーの主張、公的な予防行動を同じ種類の証拠として扱わない。
+- 製品を紹介する場合も、未検証の比較値から「最適」「最も効果的」と順位付けしない。
+- 熱中症が疑われる場合の対応は、厚生労働省の現行案内へ戻れるようにする。
 
-## 📝 概要
+## 現在のページ
 
-夏の暑さ対策について、学術論文のような形式で情報を整理・表示するウェブサイトです。UV遮蔽、体温調節、冷却システムなどの対策を科学的な説明とともに紹介しています。
+`index.html` だけで次を確認できます。
 
-### 特徴
+1. 環境省の暑さ指数（WBGT）・熱中症警戒アラート等を確認する。
+2. エアコン等を適切に使い、涼しい環境で過ごす。
+3. こまめに水分・塩分を補給する。
+4. 熱中症が疑われる場合の症状と応急対応を確認する。
+5. 自力で水が飲めない、意識がない場合は救急車を呼ぶという厚生労働省の案内を確認する。
 
-- **学術論文風の構成** - Abstract、Methodology、Results等の形式
-- **数式表示** - MathJaxを使用した数学的表現
-- **データ可視化** - Chart.jsによるグラフ表示
-- **製品推奨** - 各カテゴリで1つずつ製品を紹介
+## 一次情報
 
-## 🎨 デザイン・技術要素
+- 環境省 熱中症予防情報サイト: https://www.wbgt.env.go.jp/
+- 環境省 暑さ指数（WBGT）の実況と予測: https://www.wbgt.env.go.jp/wbgt_data.php
+- 環境省 熱中症警戒情報とは: https://www.wbgt.env.go.jp/about_alert.php
+- 厚生労働省 熱中症予防のために: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212502.html
+- 厚生労働省 熱中症が疑われる人を見かけたら: https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/kenkou/nettyuu/nettyuu_taisaku/happen.html
 
-### 📐 学術的スタイル
-- **論文構成** - Abstract、Methodology、Results、Referencesセクション
-- **数式表示** - MathJaxによるLaTeX形式の数学的表現
-- **学術的配色** - 紺・水色系の落ち着いた色調
-- **専門的フォント** - Inter（本文）、JetBrains Mono（コード・数式）
+公的情報は更新されるため、実際の行動を決める際はリンク先の最新情報を確認してください。
 
-### 📊 可視化機能
-- **Chart.js** - 冷却効果の時間変化グラフ
-- **レーダーチャート** - 製品性能の多次元比較
-- **統計データ表示** - 信頼度や効果測定値の視覚化
+## 構成
 
-### 🛠️ 技術実装
-- **MathJax** - 数学的な式・方程式の美しい表示
-- **レスポンシブデザイン** - モバイル・デスクトップ対応
-- **スムーズアニメーション** - スクロール連動の要素表示
-
-## 📁 ファイル構成
-
-```
-frontend/
-├── index.html          # メインページ（学術論文風デザイン）
-├── style.css           # スタイルシート（学術的配色・フォント）
-├── script.js           # インタラクティブ機能（Chart.js・MathJax）
-└── README.md           # プロジェクト説明
+```text
+index.html
 ```
 
-## 📖 内容構成
+ページは依存ライブラリやJavaScriptを必要としません。ブラウザで `index.html` を開けば確認できます。
 
-### 1. Abstract（要旨）
-研究の背景・目的・結果の要約（学術論文風）
+## 対象外
 
-### 2. Methodology（手法）
-- 物理化学的分析の説明
-- 生理学的評価の紹介  
-- 統計学的手法の解説
-
-### 3. UV Blocking Technology（UV遮蔽技術）
-- UV遮蔽の科学的メカニズム説明
-- 数式による透過率の表現
-- おすすめ製品の紹介
-
-### 4. Thermoregulation Science（体温調節科学）
-- 体温調節の生理学的説明
-- 発汗冷却の数式表現
-- おすすめ製品の紹介
-
-### 5. Cooling Systems Engineering（冷却システム工学）
-- ペルチェ効果の原理説明
-- 熱電変換の数式表現
-- おすすめ製品の紹介
-
-### 6. Results and Statistical Analysis（結果・統計解析）
-- 効果測定結果の表示
-- 製品性能比較グラフ
-- 統計データの可視化
-
-### 7. References（参考文献）
-参考情報・出典の一覧
-
-## 🚀 デプロイ・アクセス
-
-### ライブサイト
-- **URL**: https://incredible-strudel-4d0778.netlify.app
-- **ホスティング**: Netlify
-- **レスポンシブ対応**: PC・タブレット・スマートフォン
-
-### ローカル実行
-```bash
-# ファイルをダウンロード後
-# ブラウザで index.html を開く
-open index.html  # macOS
-start index.html # Windows
-```
-
-## 🔧 技術仕様
-
-### フロントエンド技術
-- **HTML5**: セマンティックマークアップ
-- **CSS3**: Grid・Flexbox、カスタムプロパティ
-- **JavaScript**: ES6+、DOM操作
-
-### 外部ライブラリ
-- **MathJax**: 数式表示ライブラリ
-- **Chart.js**: グラフ描画ライブラリ
-- **Google Fonts**: Webフォント（Inter・JetBrains Mono）
-
-### 機能
-- **数式レンダリング**: LaTeX記法での数学表現
-- **データ可視化**: 冷却効果・性能比較のグラフ
-- **スクロールアニメーション**: 要素の段階的表示
-
-## 🏆 推奨製品
-
-サイト内で紹介している製品：
-
-### UV遮蔽
-**サンバリア100 完全遮光日傘**
-- 完全遮光をうたう日傘ブランド
-- 4層構造の特殊生地使用
-
-### 体温調節  
-**アネッサ パーフェクトUV スキンケアミルク NA**
-- 資生堂の高SPF日焼け止め
-- 汗・水に強い耐水性
-
-### 冷却システム
-**エレコム ペルチェ冷却ハンディファン**
-- 冷却プレート付きハンディファン
-- ペルチェ素子による冷却機能
-
-**OIGAE 冷感ジェルマット**
-- 接触冷感ジェルマット
-- 高い冷感効果をうたう
-
-## 🔧 カスタマイズ
-
-### 配色変更
-```css
-/* style.css - 配色カスタマイズ */
-:root {
-    --primary-color: #1a237e;    /* メインカラー */
-    --accent-color: #00acc1;     /* アクセントカラー */
-    --equation-bg: #f8f9ff;      /* 数式背景色 */
-}
-```
-
-### 数式追加例
-```javascript
-// MathJax記法での数式追加
-// 例：効率計算式
-$$\eta = \frac{ZT}{2+ZT}$$
-```
-
-### グラフ追加例
-```javascript
-// Chart.js使用例
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        datasets: [{
-            label: 'データ名',
-            data: [データ配列]
-        }]
-    }
-});
-```
-
-## 📄 ライセンス・免責事項
-
-**MIT License** - 自由に使用・修正・配布可能
-
-**免責事項**: 本サイトの情報は参考目的です。個人の体質や使用環境により効果は異なります。製品選択時は各自でご判断ください。
+- 独自の臨床・生理学試験を実施したという表示
+- 出所を検証できない効果量、信頼区間、p値、sample size
+- 出所を検証できないJIS準拠試験結果
+- 製品の性能ランキング
+- 医療上の診断・治療の代替

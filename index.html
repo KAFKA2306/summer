@@ -1,448 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夏季熱ストレス軽減技術の科学的評価と最適化システム | Scientific Analysis 2025</title>
-    <meta name="description" content="熱力学・生理学・材料科学に基づく夏季熱ストレス軽減技術の包括的科学的評価。JIS規格準拠測定データと統計学的分析による最適化システム。">
-    <meta name="keywords" content="熱力学,生理学,材料科学,UV遮蔽,ペルチェ効果,体温調節,熱伝導率,科学的評価">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            }
-        };
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>暑さ対策ガイド | 公的情報から行動を選ぶ</title>
+  <meta name="description" content="環境省・厚生労働省の公的情報をもとに、暑さ指数の確認、暑さを避ける、水分・塩分補給、熱中症が疑われる場合の対応を整理したガイドです。">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; color: #1f2937; background: #f7f7f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main, header, footer { width: min(880px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 56px 0 24px; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.12; margin: 0 0 16px; }
+    h2 { margin-top: 0; font-size: 1.35rem; }
+    p { max-width: 72ch; }
+    .lead { font-size: 1.1rem; }
+    .notice, section { background: #fff; border: 1px solid #deded8; border-radius: 14px; padding: 22px; margin: 18px 0; }
+    .notice { border-width: 2px; }
+    .steps { display: grid; gap: 14px; }
+    .step { padding-bottom: 14px; border-bottom: 1px solid #e5e7eb; }
+    .step:last-child { border-bottom: 0; padding-bottom: 0; }
+    a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .16em; }
+    ul { padding-left: 1.25rem; }
+    .sources li { margin: 8px 0; }
+    .meta { color: #5f6368; font-size: .93rem; }
+    footer { padding: 22px 0 48px; color: #5f6368; }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <h1 class="logo">🔬 Summer Heat Stress Mitigation Technology</h1>
-                <ul class="nav-menu">
-                    <li><a href="#abstract">Abstract</a></li>
-                    <li><a href="#methodology">Methodology</a></li>
-                    <li><a href="#uv-blocking">UV Blocking</a></li>
-                    <li><a href="#thermoregulation">Thermoregulation</a></li>
-                    <li><a href="#cooling-systems">Cooling Systems</a></li>
-                    <li><a href="#results">Results</a></li>
-                    <li><a href="#references">References</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <p class="meta">Summer Heat Mitigation Guide</p>
+    <h1>暑さ対策を、公的情報から選ぶ</h1>
+    <p class="lead">このページは独自の臨床試験・製品性能試験・ランキングを提示しません。環境省と厚生労働省が公開している情報へ戻れる形で、暑い日の確認事項を整理します。</p>
+  </header>
 
-    <main>
-        <section id="abstract" class="abstract">
-            <div class="container">
-                <h1 class="paper-title">Scientific Analysis and Optimization of Summer Heat Stress Mitigation Technologies: A Multidisciplinary Approach Based on Thermodynamics, Physiology, and Materials Science</h1>
-                
-                <div class="authors">
-                    <p><strong>Authors:</strong> AI Research Laboratory, Thermal Comfort Engineering Division</p>
-                    <p><strong>Submitted:</strong> July 28, 2025 | <strong>Last Updated:</strong> July 28, 2025</p>
-                </div>
+  <main>
+    <div class="notice" role="note">
+      <strong>最初に確認:</strong> 環境省の暑さ指数（WBGT）の実況・予測と、熱中症警戒アラート等の発表状況を確認してください。場所ごとの暑さ指数は環境によって異なります。
+    </div>
 
-                <div class="abstract-content">
-                    <h2>Abstract</h2>
-                    <p>本研究では、夏季熱ストレス軽減技術について、熱力学・生理学・材料科学の観点から包括的な科学的評価を実施した。UV遮蔽、体温調節、冷却システムの3つの主要カテゴリにおいて、物理化学的原理に基づく定量的分析を行い、JIS規格（JIS L 1925, JIS L 1055）準拠の測定データと統計学的手法を用いて最適化された製品選定システムを構築した。</p>
-                    
-                    <p><strong>主要成果:</strong> (1) UV遮蔽では波長280-400nmにおける光子エネルギー吸収メカニズムを分子レベルで解明、(2) 体温調節においては視床下部-発汗腺系の生理学的フィードバックループを定量化、(3) 冷却システムではペルチェ効果による熱電変換効率($\eta = \frac{ZT}{2+ZT}$)を最大化する設計パラメータを特定した。</p>
+    <section>
+      <h2>1. 暑さを避ける</h2>
+      <div class="steps">
+        <div class="step">屋内ではエアコン等を適切に使用し、涼しい環境で過ごします。</div>
+        <div class="step">屋外では、できるだけ風通しのよい日陰など涼しい場所を選びます。</div>
+        <div class="step">高齢者やこどもなど、熱中症になりやすい人には周囲からも見守り・声かけを行います。</div>
+      </div>
+    </section>
 
-                    <p><strong>結論:</strong> 科学的根拠に基づく製品選定により、従来手法と比較して熱ストレス軽減効果を平均32.7%向上させることが実証された（p < 0.001, n = 240）。</p>
-                </div>
+    <section>
+      <h2>2. 水分・塩分を補給する</h2>
+      <p>のどの渇きを感じなくても、こまめに水分・塩分を補給します。持病などで医師から水分摂取について指示を受けている場合は、その指示を優先してください。</p>
+    </section>
 
-                <div class="keywords">
-                    <p><strong>Keywords:</strong> 熱力学 (Thermodynamics), 生理学 (Physiology), UV遮蔽 (UV Blocking), ペルチェ効果 (Peltier Effect), 体温調節 (Thermoregulation), 熱伝導率 (Thermal Conductivity)</p>
-                </div>
-            </div>
-        </section>
+    <section>
+      <h2>3. 運動・活動は暑さ指数に合わせる</h2>
+      <p>環境省の暑さ指数ページでは、WBGTに応じた日常生活・運動時の注意事項が示されています。固定した気温だけで判断せず、その場所・時間のWBGTと公式の発表を確認してください。</p>
+      <p><a href="https://www.wbgt.env.go.jp/wbgt_data.php">環境省: 暑さ指数（WBGT）の実況と予測</a></p>
+    </section>
 
-        <section id="methodology" class="section">
-            <div class="container">
-                <h2 class="section-title">1. Methodology</h2>
-                
-                <div class="methodology-grid">
-                    <div class="method-card">
-                        <h3>1.1 物理化学的分析</h3>
-                        <div class="equation">
-                            $$E = h\nu = \frac{hc}{\lambda}$$
-                            <p class="equation-caption">光子エネルギーとUV波長の関係（プランクの法則）</p>
-                        </div>
-                        <ul>
-                            <li>UV遮蔽：分光光度計による280-400nm透過率測定</li>
-                            <li>熱伝導：定常法・非定常法による熱拡散率測定</li>
-                            <li>冷却効果：熱電対による温度分布解析</li>
-                        </ul>
-                    </div>
+    <section>
+      <h2>4. 熱中症が疑われるとき</h2>
+      <p>厚生労働省は、めまい、立ちくらみ、筋肉のこむら返り、頭痛、吐き気、倦怠感などを熱中症の症状例として案内しています。疑われる場合は涼しい場所へ移動し、衣服をゆるめて体を冷やし、水分・塩分や経口補水液などを補給します。</p>
+      <p><strong>自力で水が飲めない、または意識がない場合は、厚生労働省の案内に従い、すぐに救急車を呼んでください。</strong></p>
+    </section>
 
-                    <div class="method-card">
-                        <h3>1.2 生理学的評価</h3>
-                        <div class="equation">
-                            $$Q_{evap} = \lambda_{v} \cdot \dot{m}_{sweat}$$
-                            <p class="equation-caption">発汗による蒸発冷却の熱収支</p>
-                        </div>
-                        <ul>
-                            <li>体温調節：視床下部温度受容器の応答特性</li>
-                            <li>発汗機構：TRPM8チャネルの分子生物学的解析</li>
-                            <li>熱収支：代謝熱産生と放熱のバランス</li>
-                        </ul>
-                    </div>
+    <section>
+      <h2>製品について</h2>
+      <p>日傘、日焼け止め、冷却器具などは用途や製品ごとに性能・使用条件が異なります。このサイトでは、メーカーの表示や未確認の比較値だけを根拠に「最適」「最も効果的」といった順位付けはしません。購入前にメーカーの現行仕様・注意事項を確認してください。</p>
+    </section>
 
-                    <div class="method-card">
-                        <h3>1.3 統計学的手法</h3>
-                        <div class="equation">
-                            $$\bar{x} \pm t_{\alpha/2,n-1} \cdot \frac{s}{\sqrt{n}}$$
-                            <p class="equation-caption">95%信頼区間（n ≥ 30, t検定）</p>
-                        </div>
-                        <ul>
-                            <li>効果量測定：Cohen's d による効果サイズ</li>
-                            <li>有意差検定：ANOVA および事後検定</li>
-                            <li>回帰分析：性能予測モデル構築</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section>
+      <h2>一次情報</h2>
+      <ul class="sources">
+        <li><a href="https://www.wbgt.env.go.jp/">環境省 熱中症予防情報サイト</a> — 暑さ指数、熱中症警戒アラート等</li>
+        <li><a href="https://www.wbgt.env.go.jp/about_alert.php">環境省 熱中症警戒情報とは</a> — 発表基準と予防行動</li>
+        <li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212502.html">厚生労働省 熱中症予防のために</a> — 予防、症状、応急対応</li>
+        <li><a href="https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/kenkou/nettyuu/nettyuu_taisaku/happen.html">厚生労働省 熱中症が疑われる人を見かけたら</a> — 応急処置</li>
+      </ul>
+      <p class="meta">公的情報は更新されるため、行動を決める際はリンク先の最新情報を確認してください。本ページは診断や治療の代替ではありません。</p>
+    </section>
+  </main>
 
-        <section id="uv-blocking" class="section alt">
-            <div class="container">
-                <h2 class="section-title">2. UV Blocking Technology</h2>
-                
-                <div class="research-content">
-                    <div class="theory-section">
-                        <h3>2.1 分子レベルUV遮蔽メカニズム</h3>
-                        <p>紫外線遮蔽は共役π電子系による光子エネルギー吸収が基本原理である。波長280-400nmの紫外線フォトン（エネルギー300-600 kJ/mol）が有機分子の HOMO-LUMO 遷移を励起し、電子励起状態から熱エネルギーとして散逸する過程で遮蔽効果を発現する<sup>[1]</sup>。</p>
-                        
-                        <div class="equation">
-                            $$\tau_{UV} = e^{-\alpha \cdot d} = e^{-\frac{A \cdot d}{\ln(10)}}$$
-                            <p class="equation-caption">ランベルト・ベールの法則による透過率（α: 吸収係数, d: 厚さ）</p>
-                        </div>
-
-                        <div class="data-table">
-                            <h4>材料別UV遮蔽性能</h4>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>材料</th>
-                                        <th>UVカット率 (%)</th>
-                                        <th>共役系長</th>
-                                        <th>分子吸収係数 (M⁻¹cm⁻¹)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>ポリエステル</td>
-                                        <td>90.0 ± 2.1</td>
-                                        <td>中程度</td>
-                                        <td>1.2 × 10⁴</td>
-                                    </tr>
-                                    <tr>
-                                        <td>綿</td>
-                                        <td>68.0 ± 3.5</td>
-                                        <td>短い</td>
-                                        <td>3.2 × 10³</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4層ラミネート</td>
-                                        <td>99.99 ± 0.01</td>
-                                        <td>長い</td>
-                                        <td>8.7 × 10⁴</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="optimal-product">
-                        <h3>2.2 科学的最適解</h3>
-                        <div class="product-recommendation">
-                            <div class="product-header">
-                                <h4>🏆 サンバリア100 完全遮光日傘</h4>
-                                <div class="confidence-badge">信頼度: 99.7%</div>
-                            </div>
-                            
-                            <div class="scientific-data">
-                                <div class="measurement">
-                                    <strong>遮光率:</strong> 100.000% (測定精度: ±0.001%)
-                                </div>
-                                <div class="measurement">
-                                    <strong>UV透過率:</strong> 0.000% (検出限界以下)
-                                </div>
-                                <div class="measurement">
-                                    <strong>試験機関:</strong> 一般財団法人カケンテストセンター
-                                </div>
-                                <div class="measurement">
-                                    <strong>試験方法:</strong> JIS L 1925:2019 準拠
-                                </div>
-                            </div>
-
-                            <div class="scientific-rationale">
-                                <h5>選定根拠</h5>
-                                <ul>
-                                    <li><strong>材料工学:</strong> 4層構造ラミネート加工による多重散乱効果</li>
-                                    <li><strong>光学特性:</strong> 全波長域280-400nmで99.99%以上の遮蔽率</li>
-                                    <li><strong>耐久性:</strong> 分子レベル結合により経年劣化なし</li>
-                                    <li><strong>統計的優位性:</strong> 他製品比較でp < 0.001の有意差</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="thermoregulation" class="section">
-            <div class="container">
-                <h2 class="section-title">3. Thermoregulation Science</h2>
-                
-                <div class="research-content">
-                    <div class="theory-section">
-                        <h3>3.1 体温調節の神経生理学</h3>
-                        <p>体温調節は視床下部視索前野（POA）に存在する温度感受性ニューロンによる精密制御システムである。深部体温が設定値37°Cから逸脱すると、視床下部からの自律神経系を介した指令により発汗腺からの水分分泌が促進され、気化熱による冷却効果を発現する<sup>[2]</sup>。</p>
-
-                        <div class="equation">
-                            $$Q_{evap} = \lambda_{v} \cdot A_{skin} \cdot h_{evap} \cdot (P_{skin} - P_{air})$$
-                            <p class="equation-caption">蒸発冷却による熱損失（λᵥ: 蒸発潜熱, A: 皮膚面積, h: 蒸発伝達係数）</p>
-                        </div>
-
-                        <div class="physiology-diagram">
-                            <h4>TRPM8冷感受容体の分子機構</h4>
-                            <p>TRPM8は非選択性陽イオンチャネルとして、23-26°C以下の非侵害性冷刺激により活性化される。チャネル開口にはPI(4,5)P₂が必要で、細胞内Ca²⁺濃度上昇とPLCγ活性化によるフィードバック抑制機構を持つ<sup>[3]</sup>。</p>
-                        </div>
-                    </div>
-
-                    <div class="optimal-product">
-                        <h3>3.2 科学的最適解</h3>
-                        <div class="product-recommendation">
-                            <div class="product-header">
-                                <h4>🏆 アネッサ パーフェクトUV スキンケアミルク NA</h4>
-                                <div class="confidence-badge">信頼度: 98.9%</div>
-                            </div>
-                            
-                            <div class="scientific-data">
-                                <div class="measurement">
-                                    <strong>SPF値:</strong> 50+ (実測値: 52.3 ± 1.2)
-                                </div>
-                                <div class="measurement">
-                                    <strong>PA値:</strong> ++++ (UVA-PF: 16.8)
-                                </div>
-                                <div class="measurement">
-                                    <strong>オートリペア技術:</strong> 分子レベル膜修復機構
-                                </div>
-                                <div class="measurement">
-                                    <strong>耐水性:</strong> 80分水浸耐性試験クリア
-                                </div>
-                            </div>
-
-                            <div class="scientific-rationale">
-                                <h5>選定根拠</h5>
-                                <ul>
-                                    <li><strong>生化学:</strong> オートブースター技術による汗・水分誘発型効果増強</li>
-                                    <li><strong>材料科学:</strong> ナノレベル均一分散による最適カバレッジ</li>
-                                    <li><strong>皮膚科学:</strong> スキンケア成分50%配合による角質層保護</li>
-                                    <li><strong>統計的優位性:</strong> 13製品比較試験で最高評価獲得</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cooling-systems" class="section alt">
-            <div class="container">
-                <h2 class="section-title">4. Cooling Systems Engineering</h2>
-                
-                <div class="research-content">
-                    <div class="theory-section">
-                        <h3>4.1 ペルチェ効果の熱力学</h3>
-                        <p>ペルチェ効果は熱電効果の一種で、異種導体接合部に直流電流を流した際に発生する吸熱・発熱現象である。熱電変換効率は無次元性能指数ZT = (α²σT)/κで表され、ゼーベック係数α、電気伝導率σ、熱伝導率κの最適化により決定される<sup>[4]</sup>。</p>
-
-                        <div class="equation">
-                            $$COP_{cooling} = \frac{T_c}{T_h - T_c} \cdot \frac{\sqrt{1+ZT} - T_h/T_c}{\sqrt{1+ZT} + 1}$$
-                            <p class="equation-caption">ペルチェ冷却器の成績係数（ZT: 無次元性能指数, Tₕ: 高温側, Tᶜ: 低温側）</p>
-                        </div>
-
-                        <div class="thermal-analysis">
-                            <h4>接触冷感の伝熱工学</h4>
-                            <p>接触冷感はQ-max値で定量化され、0.2 W/cm²以上で冷感を知覚する。熱拡散率α = λ/(ρcₚ)と熱伝導率λの最適化により、瞬間的な熱流束最大化を実現する<sup>[5]</sup>。</p>
-
-                            <div class="data-visualization">
-                                <canvas id="coolingChart" width="400" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="optimal-products">
-                        <h3>4.2 科学的最適解</h3>
-                        
-                        <div class="product-recommendation">
-                            <div class="product-header">
-                                <h4>🏆 エレコム ペルチェ冷却ハンディファン</h4>
-                                <div class="confidence-badge">信頼度: 97.4%</div>
-                            </div>
-                            
-                            <div class="scientific-data">
-                                <div class="measurement">
-                                    <strong>冷却温度:</strong> -12°C (30秒到達)
-                                </div>
-                                <div class="measurement">
-                                    <strong>ペルチェ素子:</strong> Bi₂Te₃系 (ZT = 1.2)
-                                </div>
-                                <div class="measurement">
-                                    <strong>冷却電力:</strong> 15W (効率84%)
-                                </div>
-                                <div class="measurement">
-                                    <strong>バッテリー:</strong> Li-ion 5000mAh
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product-recommendation">
-                            <div class="product-header">
-                                <h4>🏆 OIGAE 冷感ジェルマット</h4>
-                                <div class="confidence-badge">信頼度: 96.8%</div>
-                            </div>
-                            
-                            <div class="scientific-data">
-                                <div class="measurement">
-                                    <strong>Q-max値:</strong> 0.61 W/cm² (業界最高)
-                                </div>
-                                <div class="measurement">
-                                    <strong>冷却効果:</strong> -11°C (接触瞬間)
-                                </div>
-                                <div class="measurement">
-                                    <strong>熱拡散率:</strong> 1.2 × 10⁻⁷ m²/s
-                                </div>
-                                <div class="measurement">
-                                    <strong>材料:</strong> Na₂SO₄・10H₂O ゲル
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="results" class="section">
-            <div class="container">
-                <h2 class="section-title">5. Results and Statistical Analysis</h2>
-                
-                <div class="results-grid">
-                    <div class="result-card">
-                        <h3>5.1 効果測定結果</h3>
-                        <div class="statistics">
-                            <div class="stat-item">
-                                <span class="stat-value">32.7%</span>
-                                <span class="stat-label">平均効果向上</span>
-                                <span class="stat-detail">(95% CI: 28.3-37.1%)</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">p < 0.001</span>
-                                <span class="stat-label">統計的有意性</span>
-                                <span class="stat-detail">(ANOVA, F = 142.7)</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">n = 240</span>
-                                <span class="stat-label">被験者数</span>
-                                <span class="stat-detail">(パワー解析: β = 0.95)</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="result-card">
-                        <h3>5.2 回帰分析モデル</h3>
-                        <div class="equation">
-                            $$Effectiveness = 0.847 \cdot UV_{block} + 0.623 \cdot Cool_{eff} + 0.295 \cdot Comfort$$
-                            <p class="equation-caption">R² = 0.923, RMSE = 2.14, p < 0.001</p>
-                        </div>
-                        <p>多重回帰分析により、UV遮蔽効果(β = 0.847)が最も高い寄与を示し、続いて冷却効果(β = 0.623)、快適性(β = 0.295)の順となった。</p>
-                    </div>
-
-                    <div class="result-card">
-                        <h3>5.3 製品性能比較</h3>
-                        <div class="performance-chart">
-                            <canvas id="performanceChart" width="400" height="300"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="references" class="section alt">
-            <div class="container">
-                <h2 class="section-title">References</h2>
-                
-                <div class="references-list">
-                    <ol>
-                        <li>[1] 島津製作所分析センター. "紫外可視吸収と有機化合物の構造との関係." 分析基礎講座, 2024.</li>
-                        <li>[2] 生理学研究所. "体温調節の神経回路." 脳科学辞典, doi: 10.14952/BRAIN-SCIENCE.2024, 2024.</li>
-                        <li>[3] Voets, T. et al. "TRPM8 voltage sensor mutations reveal a mechanism for integrating thermal and chemical stimuli." Nature Neuroscience, vol. 10, pp. 1237-1243, 2007.</li>
-                        <li>[4] 名古屋大学工学研究科. "熱電変換技術の基礎と応用." 熱電工学講座, 2024.</li>
-                        <li>[5] 一般財団法人ボーケン品質評価機構. "接触冷感試験方法." JIS L 1927:2019準拠, 2024.</li>
-                        <li>[6] 日本洋傘振興協議会(JUPA). "紫外線遮蔽性試験方法." JIS L 1925:2019, 2024.</li>
-                        <li>[7] 資生堂リサーチセンター. "紫外線防御メカニズムの解明." 化粧品科学, vol. 45, pp. 123-135, 2024.</li>
-                        <li>[8] 産業技術総合研究所. "熱物性標準研究." 計測標準研究部門, 2024.</li>
-                    </ol>
-                </div>
-
-                <div class="acknowledgments">
-                    <h3>Acknowledgments</h3>
-                    <p>本研究は各種測定機関のデータ提供、製品メーカーの技術協力により実施された。特に一般財団法人カケンテストセンター、一般財団法人ボーケン品質評価機構の測定データに深謝する。</p>
-                </div>
-
-                <div class="funding">
-                    <h3>Research Funding</h3>
-                    <p>本研究は科学的根拠に基づく消費者製品評価プロジェクト（2025年度）の一環として実施された。</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Scientific Standards</h3>
-                    <ul>
-                        <li>JIS L 1925:2019 (UV遮蔽性)</li>
-                        <li>JIS L 1055:2018 (熱伝導率)</li>
-                        <li>ISO 11092:2014 (蒸発抵抗)</li>
-                        <li>ASTM E1461-13 (熱拡散率)</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Testing Institutions</h3>
-                    <ul>
-                        <li>一般財団法人カケンテストセンター</li>
-                        <li>一般財団法人ボーケン品質評価機構</li>
-                        <li>産業技術総合研究所</li>
-                        <li>物質・材料研究機構</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Disclaimer</h3>
-                    <p>本研究結果は科学的測定データに基づく分析であり、個人の体質や使用環境により効果は異なる場合があります。製品選択時は専門家への相談を推奨します。</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Scientific Analysis of Summer Heat Mitigation Technologies. All rights reserved.</p>
-                <p>DOI: 10.1000/summer-heat-2025 | ISSN: 2025-HEAT</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>Source-first heat guidance. No unsupported experiment or product ranking.</footer>
 </body>
 </html>
